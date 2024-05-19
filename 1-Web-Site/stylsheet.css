@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    background-image: url("bilder/unterwasser.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f0a500;
+}
+/*Allgemein*/
+.content {
+    position: absolute;
+    top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    min-width: 90%;
+    max-width: 90%;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    margin-top: 120px;
+}
+.innerdiv {
+    background-color: #ffffff;
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 100%;
+    min-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    color: #0073e6;
+}
+details {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 1;
+}
+details[open] summary::before {
+    padding-right: .25rem;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #005bb5;
+}
+summary:hover {
+    color: #004080;
+}
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+table, th, td {
+   border: 1px solid;
+}
+table {
+    width: 100%;
+}
+th {
+    width: 20%;
+    width: 20%;
+    width: 20%;
+    width: 20%;
+    width: 20%;
+}
+td {
+    text-align: center;
+}
+/*Handy-Navbar*/
+
+
