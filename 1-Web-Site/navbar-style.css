@@ -35,6 +35,7 @@ nav a{
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
+  font-family: cursive;
 }
 nav a:hover{
   background-color: var(--accent-color);

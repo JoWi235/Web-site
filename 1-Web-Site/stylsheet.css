@@ -43,7 +43,10 @@ body {
     min-width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-h1{
+h1,
+h2,
+h3,
+h4 {
     text-align: center;
     color: #0073e6;
 }
@@ -69,9 +72,16 @@ summary {
 summary:hover {
     color: #004080;
 }
+.stichpunkte {
+    list-style: none;
+    text-align: center;
+}
 p {
     margin: 10px 0;
     line-height: 1.6;
+}
+.paragraph {
+    text-align: center;
 }
 a {
     color: #0073e6;
@@ -80,7 +90,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
+/*Tabelle*/
 table {
     width: 100%;
     border: 1px solid #ccc;
@@ -105,12 +115,12 @@ thead{
     top: 0;
     background-color: white;
 }
-@media(max-width: 800px){
+@media(max-width: 800px) {
     table{
         width: 100%;
-        overflow-x: auto; /* Horizontales Scrollen erlauben */
-        overflow-y: auto; /* Vertikales Scrollen erlauben */
-        max-height: 400px; /* Maximale Höhe des Containers */
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height: 400px;
         border: 1px solid #ccc;
         width: 100%;
         border-collapse: collapse;
@@ -118,10 +128,32 @@ thead{
     th, td {
         padding: 10px;
         text-align: center;
-        border: 1px solid #ddd;
     }
     th {
-        background-color: #f2f2f2;
+        display: none;
+    }
+    td {
+        display: block;  
+    }
+    td::before {
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+    }
+    td:first-child {
+        padding: 1rem;
+    }
+    td:last-child {
+        padding: 1rem;
+    }
+    .bild {
+        order: 1;;
+    }
+    #mini-game {
+        visibility: hidden;
+    }
+    #mini-game::after {
+        visibility: visible;
+        content: "Game nur für Pc oder Laptops vorhanden, weil es ist nur ";
     }
 }
 
